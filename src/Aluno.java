@@ -1,10 +1,5 @@
 
-public class Aluno {
-    String nome;
-    String matricula;
-    String cpf;
-    String dataNascimento;
-    String telefone;
+public class Aluno extends Pessoa {
 
     Aluno(String nome){
        this.nome = nome;
@@ -18,4 +13,5 @@ public class Aluno {
     String informacoes(){
         return nome + " " + matricula + " " + cpf + " " + dataNascimento + " " + telefone;
     }
+
 }

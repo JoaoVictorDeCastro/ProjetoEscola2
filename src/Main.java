@@ -9,7 +9,16 @@ public class Main {
 
         System.out.println(alunoUm.informacoes());
 
-        Aluno alunoDos = new Aluno("joao", "12345678990");
-        System.out.println(alunoDos.informacoes());
+        Aluno alunoDois = new Aluno("pedro", "12345678990");
+        System.out.println(alunoDois.informacoes());
+
+        Aula aula1 = new Aula();
+        aula1.alunos.add(alunoDois);
+        aula1.alunos.add(alunoUm);
+
+        Professor professorUm = new Professor();
+        professorUm.cpf = "135345340";
+        professorUm.dataNascimento = "10/10/25560";
+        professorUm.matricula = "165523";
     }
 }

@@ -1,7 +1,3 @@
-public class Professor {
-    String nome;
-    String matricula;
-    String cpf;
-    String dataNascimento;
-    String telefone;
+public class Professor extends Pessoa {
+
 }

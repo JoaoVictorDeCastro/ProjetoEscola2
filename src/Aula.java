@@ -1,5 +1,8 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Aula {
-    Aluno aluno;
+    List <Aluno> alunos = new ArrayList<>();
     Professor professor;
     Curso curso;
     String entrada;
