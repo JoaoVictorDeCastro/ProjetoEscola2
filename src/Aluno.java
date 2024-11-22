@@ -1,5 +1,5 @@
 
-public class Aluno extends Pessoa {
+public class Aluno extends Pessoa implements IPessoa {
 
     Aluno(String nome){
        this.nome = nome;
@@ -8,10 +8,6 @@ public class Aluno extends Pessoa {
     Aluno(String nome, String cpf){
         this.nome = nome;
         this.cpf = cpf;
-    }
-
-    String informacoes(){
-        return nome + " " + matricula + " " + cpf + " " + dataNascimento + " " + telefone;
     }
 
 }

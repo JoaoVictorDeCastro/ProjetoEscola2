@@ -20,5 +20,6 @@ public class Main {
         professorUm.cpf = "135345340";
         professorUm.dataNascimento = "10/10/25560";
         professorUm.matricula = "165523";
+
     }
 }
