@@ -1,3 +1,4 @@
+package com.ajudarobotica.escola;
 public class Professor extends Pessoa implements IPessoa {
 
     @Override

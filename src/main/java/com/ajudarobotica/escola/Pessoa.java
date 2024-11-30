@@ -1,3 +1,4 @@
+package com.ajudarobotica.escola;
 public abstract class Pessoa {
     String nome;
     String matricula;
