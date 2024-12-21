@@ -1,15 +1,11 @@
 package com.ajudarobotica.escola;
 
-import java.net.InetSocketAddress;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.sun.net.httpserver.HttpServer;
-
-import com.ajudarobotica.escola.apis.ApiTeste;
-
+@SpringBootApplication
 public class Main {
-    public static void main(String[] args) throws Exception {
-        HttpServer server = HttpServer.create(new InetSocketAddress(9000), 0);
-        server.createContext("/test", new ApiTeste());
-        server.start();
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
     }
 }
