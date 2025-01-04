@@ -2,13 +2,16 @@ package com.ajudarobotica.escola;
 
 public class Aluno extends Pessoa implements IPessoa {
 
-    Aluno(String nome){
-       this.nome = nome;
+    Aluno() {
+
     }
 
-    Aluno(String nome, String cpf){
-        this.nome = nome;
-        this.cpf = cpf;
+    Aluno(String nome, String cpf, String matricula, String dataNascimento, String telefone) {
+        setNome(nome);
+        setDataNascimento(dataNascimento);
+        setCpf(cpf);
+        setMatricula(matricula);
+        setTelefone(telefone);
     }
 
     @Override
