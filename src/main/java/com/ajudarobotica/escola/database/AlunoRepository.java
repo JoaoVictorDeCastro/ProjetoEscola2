@@ -2,7 +2,6 @@ package com.ajudarobotica.escola.database;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.ajudarobotica.escola.Aluno;
 
 public class AlunoRepository {
