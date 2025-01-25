@@ -1,4 +1,4 @@
-package com.ajudarobotica.escola.ConexaoManual;
+package com.ajudarobotica.escola.conexaomanual;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

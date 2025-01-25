@@ -1,7 +1,9 @@
 C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\Aluno.java
 C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\Aula.java
-C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\ConexaoManual\Conexao.java
-C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\ConexaoManual\Main.java
+C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\conexaomanual\AlunoRepository.java
+C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\conexaomanual\Conexao.java
+C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\conexaomanual\Main.java
+C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\Configuration.java
 C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\controllers\AlunoController.java
 C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\controllers\AulaController.java
 C:\ProjetoEscola2\src\main\java\com\ajudarobotica\escola\controllers\CursoController.java
