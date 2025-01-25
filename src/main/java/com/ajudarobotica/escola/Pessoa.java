@@ -18,47 +18,47 @@ public abstract class Pessoa {
         this.dataNascimento = dataNascimento;
     }
 
-    Boolean ValidarCpf() {
+    public Boolean validarCpf() {
         return this.cpf != null;
     }
 
-    String getNome() {
+    public String getNome() {
         return this.nome;
     }
 
-    String getMatricula() {
+    public String getMatricula() {
         return this.matricula;
     }
 
-    String getCpf() {
+    public String getCpf() {
         return this.cpf;
     }
 
-    String getTelefone() {
+    public String getTelefone() {
         return this.telefone;
     }
 
-    String getDataNascimento() {
+    public String getDataNascimento() {
         return this.dataNascimento;
     }
 
-    void setNome(String nome) {
+    public void setNome(String nome) {
         this.nome = nome; 
     }
 
-    void setTelefone(String telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone; 
     }
 
-    void setCpf(String cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf; 
     }
 
-    void setDataNascimento(String dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento; 
     }
 
-    void setMatricula(String matricula) {
+    public void setMatricula(String matricula) {
         this.matricula = matricula; 
     }
 }

@@ -2,7 +2,7 @@ package com.ajudarobotica.escola;
 
 public class Aluno extends Pessoa implements IPessoa {
 
-    Aluno() {
+    public Aluno() {
 
     }
 
@@ -16,8 +16,6 @@ public class Aluno extends Pessoa implements IPessoa {
 
     @Override
     public String informacoes() {
-        // TODO Auto-generated method stub
-        
         return " ";
     }
 
