@@ -1,12 +1,15 @@
-package com.ajudarobotica.escola;
+package com.ajudarobotica.escola.model;
+
+import com.ajudarobotica.escola.IPessoa;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 
 @Entity
-public class Aluno implements IPessoa {
-
-    
+public class Professor implements IPessoa {
+    @OneToOne
+    private Aula aula;
     private String nome;
     @Id
     private String matricula;
@@ -14,11 +17,11 @@ public class Aluno implements IPessoa {
     private String dataNascimento;
     private String telefone;
 
-    public Aluno() {
+    Professor() {
 
     }
     
-    Aluno(String nome, String cpf, String matricula, String dataNascimento, String telefone) {
+    Professor(String nome, String cpf, String matricula, String dataNascimento, String telefone) {
         this.nome = nome;
         this.telefone = telefone;
         this.cpf = cpf;
@@ -28,6 +31,10 @@ public class Aluno implements IPessoa {
 
     public Boolean validarCpf() {
         return this.cpf != null;
+    }
+
+    Aula getAula() {
+        return this.aula;
     }
 
     public String getNome() {
@@ -70,9 +77,14 @@ public class Aluno implements IPessoa {
         this.matricula = matricula; 
     }
 
+    void setAula(Aula aula) {
+        this.aula = aula;
+    }
+
     @Override
     public String informacoes() {
-        return " ";
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'informacoes'");
     }
 
 }

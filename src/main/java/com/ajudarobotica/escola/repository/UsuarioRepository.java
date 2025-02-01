@@ -1,8 +1,9 @@
-package com.ajudarobotica.escola.database;
+package com.ajudarobotica.escola.repository;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.ajudarobotica.escola.Usuario;
+
+import com.ajudarobotica.escola.model.Usuario;
 
 public class UsuarioRepository {
     List<Usuario> usuarios = new ArrayList<>();

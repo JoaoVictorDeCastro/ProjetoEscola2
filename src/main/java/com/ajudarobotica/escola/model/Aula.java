@@ -1,27 +1,42 @@
-package com.ajudarobotica.escola;
-import java.util.ArrayList;
-import java.util.List;
+package com.ajudarobotica.escola.model;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+
+@Entity
 public class Aula {
-    private List <Aluno> alunos = new ArrayList<>();
+    @OneToMany
+    private Set<Aluno> alunos = new HashSet<>();
+    @OneToOne
     private Professor professor;
+    @OneToOne
     private Curso curso;
     private String entrada;
     private String saida;
+    @Id
+    private String id;
 
     Aula() {
 
     }
 
-    Aula(List<Aluno> alunos, Professor professor, Curso curso, String entrada, String saida) {
+    Aula(Set<Aluno> alunos, Professor professor, Curso curso, String entrada, String saida, String id) {
         setAlunos(alunos);
         setCurso(curso);
         setProfessor(professor);
         setEntrada(entrada);
         setSaida(saida);
+        setId(id);
     }
 
-    List<Aluno> getAlunos() {
+    Set<Aluno> getAlunos() {
         return this.alunos;
     }
 
@@ -41,7 +56,11 @@ public class Aula {
         return this.saida;
     }
 
-    void setAlunos(List<Aluno> alunos) {
+    String getId() {
+        return this.id;
+    }
+
+    void setAlunos(Set<Aluno> alunos) {
         this.alunos = alunos;
     }
 
@@ -59,5 +78,9 @@ public class Aula {
 
     void setSaida(String saida) {
         this.saida = saida;
+    }
+
+    void setId(String id) {
+        this.id = id;
     }
 }

@@ -1,8 +1,9 @@
-package com.ajudarobotica.escola.database;
+package com.ajudarobotica.escola.repository;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.ajudarobotica.escola.Curso;
+
+import com.ajudarobotica.escola.model.Curso;
 
 public class CursoRepository {
     List<Curso> cursos = new ArrayList<>();

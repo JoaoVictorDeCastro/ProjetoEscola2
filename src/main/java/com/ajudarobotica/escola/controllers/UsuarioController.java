@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.ajudarobotica.escola.Usuario;
-import com.ajudarobotica.escola.database.UsuarioRepository;
+
+import com.ajudarobotica.escola.model.Usuario;
+import com.ajudarobotica.escola.repository.UsuarioRepository;
 import com.google.gson.Gson;
 
 @RestController

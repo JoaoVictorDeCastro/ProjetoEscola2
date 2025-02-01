@@ -7,7 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ajudarobotica.escola.Aluno;
+import com.ajudarobotica.escola.model.Aluno;
 
 public class AlunoRepository {
     public List<Aluno> getAll(Connection connection) throws SQLException {

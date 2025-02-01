@@ -1,8 +1,12 @@
-package com.ajudarobotica.escola;
+package com.ajudarobotica.escola.model;
 
 import org.mindrot.jbcrypt.BCrypt;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
 public class Usuario {
+    @Id
     private String login;
     private String email;
     private String senha;
