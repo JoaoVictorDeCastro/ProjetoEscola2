@@ -1,18 +1,8 @@
 package com.ajudarobotica.escola.repository;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.ajudarobotica.escola.model.Aula;
 
-public class AulaRepository {
-    List<Aula> aulas = new ArrayList<>();
-    
-    public void insert(Aula aula) {
-        aulas.add(aula);
-    }
+public interface AulaRepository extends JpaRepository<Aula, String> {
 
-    public List<Aula> getAll() {
-        return aulas;
-    }
 }
