@@ -1,4 +1,4 @@
-package com.ajudarobotica.escola.conexaomanual;
+package com.ajudarobotica.escola.ConexaoManual;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
