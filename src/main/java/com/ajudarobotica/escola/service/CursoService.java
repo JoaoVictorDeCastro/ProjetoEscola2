@@ -22,4 +22,8 @@ public class CursoService {
     public Curso save(Curso curso) {
         return cursoRepository.save(curso);
     }
+
+    public void delete(String matricula) {
+        cursoRepository.deleteById(matricula);
+    }
 }

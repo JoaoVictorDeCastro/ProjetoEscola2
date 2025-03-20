@@ -20,4 +20,8 @@ public class AlunoService {
     public Aluno save(Aluno aluno) {
         return alunoRepository.save(aluno);
     }
+
+    public void delete(String matricula) {
+        alunoRepository.deleteById(matricula);
+    }
 }

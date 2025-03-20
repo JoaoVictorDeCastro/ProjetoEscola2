@@ -20,4 +20,8 @@ public class AulaService {
     public Aula save(Aula aula) {
         return aulaRepository.saveAndFlush(aula);
     }
+
+    public void delete(String matricula) {
+        aulaRepository.deleteById(matricula);
+    }
 }
